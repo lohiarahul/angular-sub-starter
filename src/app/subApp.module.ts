@@ -48,7 +48,7 @@ type StoreType = {
  * `AppModule` is the main entry point into Angular2's bootstraping process
  */
 @NgModule({
-  bootstrap: [ AppComponent ],
+  bootstrap: [AppComponent],
   declarations: [
     AppComponent,
     AboutComponent,
@@ -71,14 +71,15 @@ type StoreType = {
   providers: [
     ENV_PROVIDERS,
     APP_PROVIDERS
-  ]
+  ],
+  exports: [SubHomeComponent]
 })
 export class SubAppModule {
 
   constructor(
     public appRef: ApplicationRef,
     public appState: AppState
-  ) {}
+  ) { }
 
   public hmrOnInit(store: StoreType) {
     if (!store || !store.state) {
@@ -116,7 +117,7 @@ export class SubAppModule {
     /**
      * Save input values
      */
-    store.restoreInputValues  = createInputTransfer();
+    store.restoreInputValues = createInputTransfer();
     /**
      * Remove styles
      */
