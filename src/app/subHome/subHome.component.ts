@@ -23,13 +23,13 @@ import { XLargeDirective } from './x-large';
   /**
    * Our list of styles in our component. We may add more to compose many styles together.
    */
-  styleUrls: [ './home.component.css' ],
+  styleUrls: [ './subHome.component.css' ],
   /**
    * Every Angular template is first compiled by the browser before Angular runs it's compiler.
    */
-  templateUrl: './home.component.html'
+  templateUrl: './subHome.component.html'
 })
-export class HomeComponent implements OnInit {
+export class SubHomeComponent implements OnInit {
   /**
    * Set our default values
    */
