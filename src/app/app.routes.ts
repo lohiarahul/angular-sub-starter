@@ -5,7 +5,7 @@ import { NoContentComponent } from './no-content';
 
 import { DataResolver } from './app.resolver';
 
-export const ROUTES: Routes = [
+export const SUBROUTES: Routes = [
   { path: '',      component: SubHomeComponent },
   { path: 'home',  component: SubHomeComponent },
   { path: 'about', component: AboutComponent },
