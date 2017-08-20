@@ -4,8 +4,8 @@
   <hr>
 
   <div>
-    For hot module reloading run - this is from the sub package
-    From angular-sub-starter
+    For hot module reloading run - this is from the sub package From angular-sub-starter
+    <img src="../assets/img/bigfile.jpg" />
     <pre>npm run start:hmr</pre>
   </div>
 
@@ -16,10 +16,7 @@
 
     <form (ngSubmit)="submitState(localState.value)" autocomplete="off">
 
-      <input
-        [value]="localState.value"
-        (input)="localState.value = $event.target.value"
-        placeholder="Submit Local State to App State"
+      <input [value]="localState.value" (input)="localState.value = $event.target.value" placeholder="Submit Local State to App State"
         autofocus>
 
       <button>Submit Value</button>
