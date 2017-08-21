@@ -1,4 +1,3 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {
@@ -60,7 +59,6 @@ type StoreType = {
    * Import Angular's modules.
    */
   imports: [
-    BrowserModule,
     FormsModule,
     HttpModule,
     RouterModule.forRoot(SUBROUTES)
