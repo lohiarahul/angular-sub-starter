@@ -63,7 +63,7 @@ type StoreType = {
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forChild(SUBROUTES)
+    RouterModule.forRoot(SUBROUTES)
   ],
   /**
    * Expose our Services and Providers into Angular's dependency injection.

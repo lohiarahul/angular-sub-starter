@@ -73,7 +73,7 @@ module.exports = function (env) {
        *
        * See: http://webpack.github.io/docs/configuration.html#output-filename
        */
-      filename: '[name].[chunkhash].bundle.js',
+      filename: 'sub[name].[chunkhash].bundle.js',
 
       /**
        * The filename of the SourceMaps for the JavaScript files.
@@ -81,7 +81,7 @@ module.exports = function (env) {
        *
        * See: http://webpack.github.io/docs/configuration.html#output-sourcemapfilename
        */
-      sourceMapFilename: '[file].map',
+      sourceMapFilename: 'sub[file].map',
 
       /**
        * The filename of non-entry chunks as relative path
@@ -89,7 +89,7 @@ module.exports = function (env) {
        *
        * See: http://webpack.github.io/docs/configuration.html#output-chunkfilename
        */
-      chunkFilename: '[name].[chunkhash].chunk.js'
+      chunkFilename: 'sub[name].[chunkhash].chunk.js'
 
     },
 
