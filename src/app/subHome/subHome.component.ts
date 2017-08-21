@@ -27,7 +27,7 @@ import { XLargeDirective } from './x-large';
   /**
    * Every Angular template is first compiled by the browser before Angular runs it's compiler.
    */
-  template : `<img [src]="imagePath1" />
+  template : ` This is the sub component<img [src]="imagePath1" />
   <img [src]="imagePath2" />`
 })
 export class SubHomeComponent implements OnInit {
