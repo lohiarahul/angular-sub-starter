@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common'
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {
@@ -59,6 +60,7 @@ type StoreType = {
    * Import Angular's modules.
    */
   imports: [
+    CommonModule,
     FormsModule,
     HttpModule,
     RouterModule.forRoot(SUBROUTES)
