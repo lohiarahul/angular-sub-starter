@@ -23,7 +23,7 @@ import { XLargeDirective } from './x-large';
   /**
    * Our list of styles in our component. We may add more to compose many styles together.
    */
-  styleUrls: [ './subHome.component.css' ],
+  styleUrls: ['./subHome.component.css'],
   /**
    * Every Angular template is first compiled by the browser before Angular runs it's compiler.
    */
@@ -34,19 +34,20 @@ export class SubHomeComponent implements OnInit {
    * Set our default values
    */
   public localState = { value: '' };
+  public imagePath = "assets/img/bigfile.jpg";
   /**
    * TypeScript public modifiers
    */
   constructor(
     public appState: AppState,
     public title: Title
-  ) {}
+  ) { }
 
   public ngOnInit() {
     console.log('hello `Home` component');
     /**
-     * this.title.getData().subscribe(data => this.data = data);
-     */
+   * this.title.getData().subscribe(data => this.data = data);
+   */
   }
 
   public submitState(value: string) {

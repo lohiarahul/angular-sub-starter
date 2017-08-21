@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { DataResolver } from './app.resolver';
 
 export const SUBROUTES: Routes = [
-  { path: '', component: AppComponent },
+  { path: '', component: SubHomeComponent },
   { path: 'home', component: SubHomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'detail', loadChildren: './+detail#DetailModule' },
