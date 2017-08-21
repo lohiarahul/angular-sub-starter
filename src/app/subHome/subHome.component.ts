@@ -27,14 +27,16 @@ import { XLargeDirective } from './x-large';
   /**
    * Every Angular template is first compiled by the browser before Angular runs it's compiler.
    */
-  templateUrl: './subHome.component.html'
+  template : `<img [src]="imagePath1" />
+  <img [src]="imagePath2" />`
 })
 export class SubHomeComponent implements OnInit {
   /**
    * Set our default values
    */
   public localState = { value: '' };
-  public imagePath = "assets/img/bigfile.jpg";
+  public imagePath1 = '../../assets/img/bigfile.jpg';
+  public imagePath2 = 'assets/img/bigfile.jpg';
   /**
    * TypeScript public modifiers
    */
